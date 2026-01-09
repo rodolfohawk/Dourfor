@@ -1,12 +1,206 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\dourfor.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\dourfor.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodolfo.sobreira\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|c:\\users\\rodolfo.sobreira\\source\\repos\\dourfor\\dourfor.ui\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{94F5C825-2E42-41A5-9389-102C3D9B1B54}|Dourfor.UI\\Dourfor.UI.csproj|solutionrelative:dourfor.ui\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Services\\AuthService.cs",
+              "RelativeToolTip": "Dourfor.UI\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:07:48.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Dourfor.UI\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:07:36.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Configuration.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Configuration.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Configuration.cs",
+              "RelativeToolTip": "Dourfor.UI\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:07:26.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-47c35332-e9b3-4bf6-950b-d4b9aeaccc05.md [Somente Leitura]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-09T14:07:16.183Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dourfor.UI",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Dourfor.UI.csproj",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Dourfor.UI.csproj",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Dourfor.UI.csproj",
+              "RelativeToolTip": "Dourfor.UI\\Dourfor.UI.csproj",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-09T14:10:38.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\App.xaml.cs",
+              "RelativeToolTip": "Dourfor.UI\\App.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawA4AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:09:57.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "RelativeToolTip": "Dourfor.UI\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAhwEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:18:48.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "Dourfor.UI\\Pages\\LoginPage.xaml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T14:14:02.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Pages\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "Dourfor.UI\\Pages\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\Pages\\RegisterPage.xaml",
+              "RelativeToolTip": "Dourfor.UI\\Pages\\RegisterPage.xaml",
+              "ViewState": "AgIAAKIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T14:14:36.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Dourfor.UI\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\AppShell.xaml",
+              "RelativeToolTip": "Dourfor.UI\\AppShell.xaml",
+              "ViewState": "AgIAABoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T14:09:46.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Dourfor.UI\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\rodolfo.sobreira\\Source\\Repos\\Dourfor\\Dourfor.UI\\MauiProgram.cs",
+              "RelativeToolTip": "Dourfor.UI\\MauiProgram.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:09:31.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

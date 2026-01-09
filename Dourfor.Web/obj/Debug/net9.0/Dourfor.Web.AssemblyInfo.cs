@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dourfor.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a84b5df1b0537b3a0e9728edf1861aaba61194d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dourfor.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dourfor.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
