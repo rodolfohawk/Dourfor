@@ -224,20 +224,3 @@ O projeto inclui as seguintes migrações:
 3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abra um Pull Request
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-## 👤 Autor
-
-**Rodolfo Hawk**
-- GitHub: [@rodolfohawk](https://github.com/rodolfohawk)
-
-## 📧 Contato
-
-Para dúvidas ou sugestões, abra uma issue no repositório.
-
----
-
-⭐ Se este projeto foi útil para você, considere dar uma estrela!
