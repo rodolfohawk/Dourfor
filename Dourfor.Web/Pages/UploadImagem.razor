@@ -1,0 +1,127 @@
+﻿@page "/upload-imagemOK"
+@using System.IO
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<h3>Upload de Imagem</h3>
+
+<p>Selecione um arquivo de imagem para fazer o upload.</p>
+
+<InputFile OnChange="@HandleFileSelection" accept="image/*" />
+
+@if (imageDataUrl != null)
+{
+    <div class="mt-3">
+        <p>Pré-visualização da imagem:</p>
+        <img src="@imageDataUrl" style="max-width: 300px; max-height: 300px; border: 1px solid #ccc; padding: 5px;" />
+    </div>
+}
+
+<div class="mt-3">
+    @if (!string.IsNullOrEmpty(feedbackMessage))
+    {
+        <p class="alert @alertClass">@feedbackMessage</p>
+    }
+</div>
+
+@code {
+    private string imageDataUrl;
+    private string feedbackMessage;
+    private string alertClass;
+
+    /// <summary>
+    /// Este método é chamado quando o usuário seleciona um arquivo.
+    /// </summary>
+    /// <param name="e">Argumentos do evento do InputFile.</param>
+    private async Task HandleFileSelection(InputFileChangeEventArgs e)
+    {
+        // 1. Verifique se o evento está sendo disparado.
+        Console.WriteLine("O método HandleFileSelection foi chamado.");
+
+        imageDataUrl = null;
+        feedbackMessage = "Processando...";
+        alertClass = "alert-info";
+
+        var file = e.File;
+        if (file == null)
+        {
+            feedbackMessage = "Nenhum arquivo selecionado.";
+            alertClass = "alert-warning";
+            return;
+        }
+
+        // 2. Verifique se é uma imagem.
+        if (!file.ContentType.StartsWith("image/"))
+        {
+            feedbackMessage = "Por favor, selecione um arquivo de imagem.";
+            alertClass = "alert-danger";
+            return;
+        }
+
+        // 3. Verifique o tamanho do arquivo (limite de 5 MB).
+        var maxFileSize = 5 * 1024 * 1024; // 5 MB
+        if (file.Size > maxFileSize)
+        {
+            feedbackMessage = $"O arquivo é muito grande. Tamanho máximo permitido: {maxFileSize / 1024 / 1024} MB.";
+            alertClass = "alert-danger";
+            return;
+        }
+
+        try
+        {
+            // 4. Leia o arquivo em um MemoryStream
+            using var stream = new MemoryStream();
+            await file.OpenReadStream(maxFileSize).CopyToAsync(stream);
+
+            // 5. Converta para Base64 para pré-visualização (opcional)
+            var base64String = Convert.ToBase64String(stream.ToArray());
+            imageDataUrl = $"data:{file.ContentType};base64,{base64String}";
+
+            feedbackMessage = "Imagem carregada com sucesso para pré-visualização.";
+            alertClass = "alert-success";
+
+            // Exemplo de como enviar para uma API (opcional)
+            // await SendImageToApi(file.Name, file.ContentType, base64String);
+
+        }
+        catch (Exception ex)
+        {
+            feedbackMessage = $"Erro ao processar o arquivo: {ex.Message}";
+            alertClass = "alert-danger";
+            Console.WriteLine(feedbackMessage);
+        }
+    }
+
+    // Método de exemplo para enviar para a API
+    /*
+    private async Task SendImageToApi(string fileName, string contentType, string base64Data)
+    {
+        var fileUploadModel = new FileUploadModel
+        {
+            FileName = fileName,
+            ContentType = contentType,
+            Base64Data = base64Data
+        };
+
+        var response = await Http.PostAsJsonAsync("api/upload-image", fileUploadModel);
+
+        if (response.IsSuccessStatusCode)
+        {
+            feedbackMessage = "Imagem enviada para o servidor com sucesso!";
+            alertClass = "alert-success";
+        }
+        else
+        {
+            feedbackMessage = $"Erro ao enviar para o servidor: {response.ReasonPhrase}";
+            alertClass = "alert-danger";
+        }
+    }
+
+    public class FileUploadModel
+    {
+        public string FileName { get; set; }
+        public string ContentType { get; set; }
+        public string Base64Data { get; set; }
+    }
+    */
+}

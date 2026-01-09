@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Dourfor.Web\\Dourfor.Web.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Dourfor.Api\\Dourfor.Api.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "http"
+      }
+    ]
+  }
+]

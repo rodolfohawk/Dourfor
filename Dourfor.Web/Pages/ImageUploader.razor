@@ -1,0 +1,98 @@
+﻿@using System.IO
+
+<div class="image-uploader">
+    <div class="custom-file">
+        <label for="@inputId" class="custom-file-label">
+            @if (imageDataUrl != null)
+            {
+                <span>Arquivo selecionado: @fileName</span>
+            }
+            else
+            {
+                <span>Selecione uma imagem...</span>
+            }
+        </label>
+        <InputFile id="@inputId" OnChange="@HandleFileSelection" accept="image/*" class="custom-file-input" />
+    </div>
+
+    @if (imageDataUrl != null)
+    {
+        <div class="image-preview mt-3">
+            <img src="@imageDataUrl" class="img-thumbnail" />
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(feedbackMessage))
+    {
+        <div class="mt-2">
+            <p class="alert @alertClass">@feedbackMessage</p>
+        </div>
+    }
+</div>
+
+@code {
+    // Parâmetro para passar o ID para o input, tornando-o único
+    [Parameter]
+    public string inputId { get; set; } = Guid.NewGuid().ToString();
+
+    // Parâmetro para que o componente pai receba a imagem como uma string Base64
+    [Parameter]
+    public EventCallback<string> OnImageSelected { get; set; }
+
+    private string imageDataUrl;
+    private string fileName;
+    private string feedbackMessage;
+    private string alertClass;
+
+    private async Task HandleFileSelection(InputFileChangeEventArgs e)
+    {
+        feedbackMessage = "Processando...";
+        alertClass = "alert-info";
+
+        var file = e.File;
+        if (file == null)
+        {
+            imageDataUrl = null;
+            fileName = null;
+            return;
+        }
+
+        // Limita o tamanho do arquivo a 5 MB
+        var maxFileSize = 5 * 1024 * 1024;
+        if (file.Size > maxFileSize)
+        {
+            feedbackMessage = "O arquivo é muito grande. Máximo de 5 MB permitido.";
+            alertClass = "alert-danger";
+            return;
+        }
+
+        if (!file.ContentType.StartsWith("image/"))
+        {
+            feedbackMessage = "Por favor, selecione um arquivo de imagem.";
+            alertClass = "alert-danger";
+            return;
+        }
+
+        try
+        {
+            using var stream = new MemoryStream();
+            await file.OpenReadStream(maxFileSize).CopyToAsync(stream);
+            var base64String = Convert.ToBase64String(stream.ToArray());
+
+            imageDataUrl = $"data:{file.ContentType};base64,{base64String}";
+            fileName = file.Name;
+            feedbackMessage = "Imagem carregada com sucesso.";
+            alertClass = "alert-success";
+
+            // Dispara o EventCallback com a string Base64 para o componente pai
+            await OnImageSelected.InvokeAsync(base64String);
+        }
+        catch (Exception ex)
+        {
+            feedbackMessage = $"Erro ao processar o arquivo: {ex.Message}";
+            alertClass = "alert-danger";
+            imageDataUrl = null;
+            fileName = null;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+USE [master];
+GO
+
+ALTER DATABASE [Dourfor-dev] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+
+DROP DATABASE [Dourfor-dev];
+GO

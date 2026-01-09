@@ -1,0 +1,48 @@
+@page "/profiles"
+@inherits ListProfilesPage
+
+<MudText Typo="Typo.h3">Categorias</MudText>
+
+
+<MudDataGrid
+    Class="mt-4"
+    Items="@Profiles"
+    Filterable="true"
+    QuickFilter="Filter"
+    Hideable="true">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Profiles</MudText>
+        <MudSpacer/>
+        <MudTextField
+            @bind-Value="SearchTerm"
+            Placeholder="Filtrar..."
+            Adornment="Adornment.Start"
+            AdornmentIcon="@Icons.Material.Filled.Search"
+            Immediate="true"
+            IconSize="Size.Medium"
+            Class="mt-0">
+        </MudTextField>
+    </ToolBarContent>
+    <Columns>
+        <PropertyColumn Property="x => x.Id" Title="#"/>
+        <PropertyColumn Property="x => x.Title" Title="Profile"/>
+        <TemplateColumn Class="d-flex justify-end">
+            <CellTemplate>
+                <MudStack Row>
+                    <MudImage Src="@($"{context.Item.ImageUrl}")" Alt="Mony the dog" Elevation="25" Class="rounded-lg" width="200" />
+                    <MudIconButton 
+                        Icon="@Icons.Material.Filled.Edit"
+                        Href="@($"/Profiles/editar/{context.Item.Id}")"
+                        Color="Color.Primary">
+                    </MudIconButton>
+                    <MudIconButton 
+                        Icon="@Icons.Material.Filled.Delete"
+                        Color="Color.Error"
+                        aria-label="Excluir"
+                        OnClick="() => OnDeleteButtonClickedAsync(context.Item.Id, context.Item.Title)">
+                    </MudIconButton>
+                </MudStack>
+            </CellTemplate>
+        </TemplateColumn>
+    </Columns>
+</MudDataGrid>

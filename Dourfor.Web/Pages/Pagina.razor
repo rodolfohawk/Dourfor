@@ -1,0 +1,41 @@
+﻿@page "/upload"
+
+<h3>Minha Página de Perfil</h3>
+
+<p>Adicione sua foto de perfil:</p>
+
+<ImageUploader OnImageSelected="@HandleImageUpload" />
+
+@if (!string.IsNullOrEmpty(uploadedImageBase64))
+{
+    <hr />
+    <p>A imagem foi recebida pelo componente pai. Agora você pode enviá-la para a API:</p>
+    <button class="btn btn-primary" @onclick="SendImageToServer">Enviar para o Servidor</button>
+}
+
+@code {
+    private string uploadedImageBase64;
+    
+    // Este método será chamado pelo ImageUploader com a imagem em Base64
+    private void HandleImageUpload(string base64Image)
+    {
+        uploadedImageBase64 = base64Image;
+        Console.WriteLine("Imagem recebida no componente pai!");
+    }
+
+    private void SendImageToServer()
+    {
+        if (string.IsNullOrEmpty(uploadedImageBase64))
+        {
+            Console.WriteLine("Nenhuma imagem para enviar.");
+            return;
+        }
+
+        // Aqui você faria a lógica para enviar a 'uploadedImageBase64' para a sua API
+        // Ex:
+        // var payload = new { Base64Data = uploadedImageBase64 };
+        // await Http.PostAsJsonAsync("api/upload-image", payload);
+
+        Console.WriteLine("Enviando imagem para o servidor...");
+    }
+}
